@@ -1,0 +1,25 @@
+always-display-description yes
+article-sort-order date-asc
+
+auto-reload yes
+reload-time 180  
+
+# Setting color
+color background          white	    black
+color listnormal          color249  black
+color listfocus           cyan	    black	underline	
+color listnormal_unread   color124  black
+color listfocus_unread    yellow    black	underline
+color info                color249  black	bold
+color article             color249  black
+search-highlight-colors	    white   yellow	bold
+
+datetime-format "%d/%b/%y %H:%M"
+feed-sort-order lastupdated
+text-width 0
+
+html-renderer internal #Learn more about this
+# include ___
+
+save-path "/home/thunder1879/snap/newsboat/3335/saved_articles/"
+
