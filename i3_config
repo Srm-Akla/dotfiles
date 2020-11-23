@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -106,6 +107,12 @@ bindsym $mod+space focus mode_toggle
 
 # focus the child container
 #bindsym $mod+d focus child
+
+#Other 
+bindsym control+$alt+1 exec slack
+bindsym control+$alt+2 exec firefox
+bindsym control+$alt+3 exec pomotroid
+bindsym control+$alt+4 exec joplin-james-carroll.joplin
 
 #i3-gaps
 smart_borders on
