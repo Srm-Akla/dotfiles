@@ -1,0 +1,1 @@
+/home/thunder1879/.config/i3/my_i3lock.sh

@@ -134,7 +134,7 @@ bindsym --release $mod+Print exec gnome-screenshot -a
 bindsym --release $mod+Shift+Print exec gnome-screenshot -c
 
 #Lock screen
-bindsym --release $mod+Shift+l exec i3lock
+bindsym --release $mod+Shift+l exec ~/.config/i3/my_i3lock.sh
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
