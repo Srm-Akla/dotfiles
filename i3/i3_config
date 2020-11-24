@@ -38,9 +38,13 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-#Adjust Brightness of Backlight
+#Adjust Brightness of Backlight with light-git
 bindsym XF86MonBrightnessUp exec --no-startup-id light -s sysfs/backlight/intel_backlight -A 10 
 bindsym XF86MonBrightnessDown exec --no-startup-id light -s sysfs/backlight/intel_backlight -U 10 
+
+#Access Config files
+
+bindsym XF86Tools exec urxvt -e configs.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -109,6 +113,7 @@ bindsym $mod+space focus mode_toggle
 #bindsym $mod+d focus child
 
 #Other 
+bindsym $mod+n exec nemo
 bindsym control+$alt+1 exec slack
 bindsym control+$alt+2 exec firefox
 bindsym control+$alt+3 exec pomotroid
@@ -116,8 +121,8 @@ bindsym control+$alt+4 exec joplin-james-carroll.joplin
 
 #i3-gaps
 smart_borders on
-gaps inner 6
-gaps outer 1
+gaps inner 8
+gaps outer 2
 
 # (No) Title Bars
 for_window [class="^.*"] border pixel 1
@@ -129,12 +134,12 @@ focus_follows_mouse no
 exec --no-startup-id feh --bg-fill ~/.local/share/backgrounds/20966.jpg
 
 #Print Screen
-bindsym --release Print exec gnome-screenshot 
+bindsym --release Print exec scrot '%d-%m-%Y_%H-%M_scrot.png' -e 'mv $f ~/Pictures' 
 bindsym --release $mod+Print exec gnome-screenshot -a
 bindsym --release $mod+Shift+Print exec gnome-screenshot -c
 
 #Lock screen
-bindsym --release $mod+Shift+l exec ~/.config/i3/my_i3lock.sh
+bindsym --release $mod+Mod1+l exec ~/.config/i3/my_i3lock.sh
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.

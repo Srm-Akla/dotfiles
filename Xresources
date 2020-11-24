@@ -1,4 +1,4 @@
-URxvt.perl-lib: /home/thunder1879/.config/rxvt/ext
+*.perl-lib: /home/thunder1879/.config/rxvt/ext
 
 Xft.dpi: 96
 Xft.antialias: true
@@ -13,32 +13,32 @@ xscreensaver.fade:   false
 xscreensaver.unfade: false
 
 ! ===== urxvt =====
-URxvt.scrollBar: off
-URxvt.internalBorder: 8 
-URxvt.imLocale: en_NO.UTF-8
-URxvt.termName: xterm-256color
-URxvt.iso14755: false
-URxvt.iso14755_52: false
-URxvt*depth:32
-URxvt.cursorUnderline: false
-URxvt.cursorBlink: true
-URxvt.transparent: false
-!URxvt.scrollBar_right: true
-URxvt.colorUL: #4682B4
-URxvt.geometry: 132x43
-URxvt.font: xft:Monospace:pixelsize=14
+*.scrollBar: off
+*.internalBorder: 8 
+*.imLocale: en_NO.UTF-8
+*.termName: xterm-256color
+*.iso14755: false
+*.iso14755_52: false
+*.depth:32
+*.cursorUnderline: false
+*.cursorBlink: true
+*.transparent: false
+!*.scrollBar_right: true
+*.colorUL: #4682B4
+*.geometry: 132x43
+*.font: xft:Monospace:pixelsize=14
 ! ----Tabs-----
-!URxvt.perl-ext-common: ...,tabbed,...
-!URxvt.tabbed.tabbar-fg: 2
-!URxvt.tabbed.tabbar-bg: 0
-!URxvt.tabbed.tab-fg: 3
-!URxvt.tabbed.tab-bg: 0
+!*.perl-ext-common: ...,tabbed,...
+!*.tabbed.tabbar-fg: 2
+!*.tabbed.tabbar-bg: 0
+!*.tabbed.tab-fg: 3
+!*.tabbed.tab-bg: 0
 !----Links------------------
-URxvt.perl-ext: default,url-select
-URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.url-select.launcher: /usr/bin/xdg-open
-URxvt.url-select.underline: true
-
+*.perl-ext: default,url-select
+*.keysym.M-u: perl:url-select:select_next
+*.url-select.launcher: /usr/bin/xdg-open
+*.url-select.underline: true
+*.visualbell: off
 
 ! =======color scheme==========
 
