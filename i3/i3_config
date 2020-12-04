@@ -249,8 +249,8 @@ bar {
 	position top
         workspace_buttons yes
 	height 20
-	#status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	status_command i3status -c ~/.config/i3/i3status.conf
+	status_command i3blocks -c ~/.config/i3/i3blocks/i3blocks.conf
+	#status_command i3status -c ~/.config/i3/i3status.conf
 	colors {
 	       background #282A36
 	       statusline #F8F8F2
