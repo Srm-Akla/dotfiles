@@ -1,0 +1,1 @@
+/home/thunder1879/.config/i3/i3blocks/vpn.sh
