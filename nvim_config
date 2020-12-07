@@ -10,6 +10,7 @@ Plug 'preservim/nerdtree'
 
 "Color Schemes
 Plug 'joshdick/onedark.vim'
+Plug 'ntk148v/vim-horizon'
 Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
 Plug 'tomasiser/vim-code-dark'
@@ -33,9 +34,9 @@ syntax enable
 
 set t_Co=256	"enables 256 colors
 set background=dark
-"let g:gruvbox_dark = 'hard'
+let g:gruvbox_contrast_dark = 'soft'
 
-colorscheme onedark
+colorscheme gruvbox
 
 set smartcase	" Enable smart-case search
 set ignorecase	" Always case-insensitive
