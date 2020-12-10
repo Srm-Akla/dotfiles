@@ -42,10 +42,10 @@ xscreensaver.unfade: false
 
 !__________Color-Scheme________
 
-*background: [95]#282828
+*background: [95]#332a24
 *foreground:#d5c4a1
-*cursorColor:#b48ead
-*color0:#3c3836
+*cursorColor:#d65d0e
+*color0:#282828
 *color1:#cc241d
 *color2:#98971a
 *color3:#d79921
@@ -60,4 +60,4 @@ xscreensaver.unfade: false
 *color12:#83a598
 *color13:#d3869b
 *color14:#8ec07c
-*color15:#fbf1c7
+*color15:#ebdbb2

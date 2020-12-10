@@ -35,7 +35,6 @@ syntax enable
 set t_Co=256	"enables 256 colors
 set background=dark
 let g:gruvbox_contrast_dark = 'soft'
-
 colorscheme gruvbox
 
 set smartcase	" Enable smart-case search

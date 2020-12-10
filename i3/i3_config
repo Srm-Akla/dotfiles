@@ -200,7 +200,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-mode "apps" {
+mode "Apps" {
 
     bindsym 1 exec signal-desktop
     bindsym 2 exec firefox
@@ -213,22 +213,23 @@ mode "apps" {
     bindsym $mod+o mode "default"
 }
 
-bindsym $mod+o mode "apps"
+bindsym $mod+o mode "Apps"
 
 #Other 
 bindsym $mod+n exec nemo
 
 #i3-gaps
 smart_borders on
-gaps inner 12
-gaps outer 3
+gaps inner 11
+gaps outer 2
 
 # (No) Title Bars
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 3
 
 assign [title="Signal"] $ws3
 assign [title="Slack"] $ws3
-assign [title="Joplin"] $ws4
+assign [title="Joplin"] $ws3
+assign [title="Freetube"] $ws4
 
 #---------------Colors-----------------
 
