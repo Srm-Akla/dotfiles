@@ -205,8 +205,8 @@ mode "Apps" {
     bindsym 1 exec signal-desktop
     bindsym 2 exec firefox
     bindsym 3 exec slack
-    bindsym 4 exec simplescreenrecorder-brlin
-    bindsym 5 exec joplin-james-carroll.joplin
+    bindsym 4 exec joplin-james-carroll.joplin
+    bindsym 5 exec simplescreenrecorder-brlin
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -254,8 +254,8 @@ bar {
 	#status_command i3status -c ~/.config/i3/i3status.conf
 	colors {
 	       background #3C3836
-	       statusline #FBF1C7
-	       separator  #44475A
+	       statusline #FFFFFF
+	       separator  #727482
 
 	       focused_workspace  #44475A #44475A #F8F8F2
 	       active_workspace   #282A36 #44475A #F8F8F2
