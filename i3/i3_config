@@ -53,6 +53,9 @@ bindsym XF86Tools exec urxvt -e configs.sh
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+#Popups
+popup_during_fullscreen leave_fullscreen
+
 # start a terminal
 bindsym $mod+Return exec rxvt-unicode 
 
@@ -123,8 +126,8 @@ bindsym $mod+Shift+a focus child
 focus_follows_mouse no
 
 #Print Screen
-bindsym --release Print exec scrot '%d-%m-%Y_%H-%M_scrot.png' -e 'mv $f ~/Pictures' 
-bindsym --release $mod+Print exec scrot -s '%d-%m-%Y_%H-%M_scrot.png' -e 'mv $f ~/Pictures'
+bindsym --release Print exec scrot '%d-%m-%Y_%H-%M-%S_scrot.png' -e 'mv $f ~/Pictures' 
+bindsym --release $mod+Print exec scrot -s '%d-%m-%Y_%H-%M-%S_scrot.png' -e 'mv $f ~/Pictures'
 
 #Lock screen
 bindsym --release $mod+Escape exec ~/.config/i3/my_i3lock.sh
@@ -233,7 +236,7 @@ assign [title="Freetube"] $ws4
 
 #---------------Colors-----------------
 
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused          #D5C4A1 #6272A4 #F8F8F2 #6272A4   #D5C4A1 
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
 client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
