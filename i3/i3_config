@@ -235,7 +235,7 @@ assign [title="Joplin"] $ws3
 assign [title="Freetube"] $ws4
 
 #---------------Colors-----------------
-
+# class                 border  backgr. text    indicator child_border
 client.focused          #D5C4A1 #6272A4 #F8F8F2 #6272A4   #D5C4A1 
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
 client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
@@ -256,10 +256,10 @@ bar {
 	status_command i3blocks -c ~/.config/i3/i3blocks/i3blocks.conf
 	#status_command i3status -c ~/.config/i3/i3status.conf
 	colors {
-	       background #3C3836
+	       background #1d2021
 	       statusline #FFFFFF
 	       separator  #727482
-
+		#class		  border  backgr  text
 	       focused_workspace  #44475A #44475A #F8F8F2
 	       active_workspace   #282A36 #44475A #F8F8F2
 	       inactive_workspace #282A36 #282A36 #BFBFBF
