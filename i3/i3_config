@@ -34,7 +34,7 @@ exec blueman-applet
 exec --no-startup-id redshift-gtk -l 58.58:6.88 -t 6500:3600 -g 0.8 -m randr -v
 
 #Background image
-exec --no-startup-id feh --no-fehbg --bg-scale ~/.local/share/backgrounds/Pictures-download-retro-wallpaper-HD.jpg
+exec --no-startup-id feh --no-fehbg --bg-scale ~/.local/share/backgrounds/abstract-artwork.jpg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
