@@ -229,9 +229,9 @@ gaps outer 2
 # (No) Title Bars
 for_window [class="^.*"] border pixel 3
 
-assign [title="Signal"] $ws3
-assign [title="Slack"] $ws3
-assign [title="Joplin"] $ws3
+assign [title="Signal"] $ws4
+assign [title="Slack"] $ws4
+assign [title="Joplin"] $ws4
 assign [title="Freetube"] $ws4
 
 #---------------Colors-----------------
