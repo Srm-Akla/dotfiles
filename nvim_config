@@ -70,3 +70,6 @@ let NERDTreeMinimalUI = 1
 let g:NERDTreeWinSize=38
 
 "---------------------------------
+"Keybindings
+
+nmap <S-Enter> O<Esc>
