@@ -1,1 +1,7 @@
-/home/thunder1879/.config/i3/i3blocks/vpn.sh
+path_vpn=/proc/sys/net/ipv4/conf/tun0
+
+if [ -d $path_vpn ]; then
+    echo "✅"
+else
+    echo "❌"
+fi

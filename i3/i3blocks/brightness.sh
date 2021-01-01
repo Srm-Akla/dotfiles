@@ -1,1 +1,5 @@
-/home/thunder1879/.config/i3/i3blocks/brightness.sh
+#!/bin/bash
+
+light=$(light -G -s sysfs/backlight/intel_backlight)
+
+echo "$light"
