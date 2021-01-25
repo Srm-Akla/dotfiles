@@ -21,6 +21,7 @@ fi
 #    notify-send -u critical -t 10000 -c Battery "Low Battery" "Charge your Battery!"
 #    ICON="❗"
 if [[ ${PERCENTAGE::-2} -le 10  &&  $STAT == "Discharging," ]]; then
+    ICON="❗"
     notify-send -u critical -t 1500 -c Battery "Low Battery" "Charge your Battery!"
 fi
 

@@ -34,12 +34,12 @@ exec blueman-applet
 exec --no-startup-id redshift-gtk -l 58.58:6.88 -t 6500:3600 -g 0.8 -m randr -v
 
 #Background image
-exec --no-startup-id feh --no-fehbg --bg-scale ~/.local/share/backgrounds/abstract-artwork.jpg
+exec --no-startup-id feh --no-fehbg --bg-scale ~/.local/share/backgrounds/signal-2021-01-12-223950.jpeg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -57,7 +57,7 @@ floating_modifier $mod
 popup_during_fullscreen leave_fullscreen
 
 # start a terminal
-bindsym $mod+Return exec rxvt-unicode 
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -227,7 +227,7 @@ gaps inner 11
 gaps outer 2
 
 # (No) Title Bars
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 3 
 
 assign [title="Signal"] $ws4
 assign [title="Slack"] $ws4
@@ -236,7 +236,7 @@ assign [class="Freetube"] $ws4
 
 #---------------Colors-----------------
 # class                 border  backgr. text    indicator child_border
-client.focused          #D5C4A1 #6272A4 #F8F8F2 #6272A4   #D5C4A1 
+client.focused          #D5C4A1 #6272A4 #F8F8F2 #D5C4A1	  #D5C4A1 
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
 client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555

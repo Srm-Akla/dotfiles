@@ -57,6 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 	color_prompt=
     fi
 fi
+
 source ~/.git-prompt.sh
 
 if [ "$color_prompt" = yes ]; then
@@ -123,7 +124,5 @@ fi
 if [ -f ~/.bash/User_export ]; then
     source ~/.bash/User_export
 fi
-# Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
-export PATH="$HOME/gems/bin:$PATH"
+
+source "$HOME/.cargo/env"

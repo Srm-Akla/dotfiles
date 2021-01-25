@@ -1,11 +1,11 @@
 #!/bin/sh
 
-Pic="$HOME/.config/i3/lock.png"
-#Pic2="$HOME/.local/share/backgrounds/abstract-2560x1440-artwork-dark-colorful-4k-19902.jpg"
+#Pic="$HOME/.config/i3/lock.png"
+Pic2="$HOME/.local/share/backgrounds/signal-2021-01-12-223950.jpeg"
 #Icon="$HOME/.local/share/backgrounds/44594.png"
 #Icon_resize="$HOME/.config/i3/icon.png"
-Blur="0x8"
-ScreenShot=$(scrot $Pic)
+#Blur="0x8"
+#ScreenShot=$(scrot $Pic)
 
 B='#00000000'  # blank
 C='#504945ca'  # clear ish
@@ -23,7 +23,7 @@ aqua='#689d6aff'
 
 ring_lock(){
 
-    i3lock -i $Pic	 \
+    i3lock -i $Pic2	 \
     --clock		 \
     --indicator		 \
     --pass-volume-keys	\
@@ -53,7 +53,7 @@ ring_lock(){
 
 bar_lock(){
 
-    i3lock -i $Pic	 \
+    i3lock -i $Pic2	 \
     --clock		 \
     --bar-indicator	 \
     --pass-volume-keys	\
@@ -80,10 +80,10 @@ bar_lock(){
     --bar-color=$B
 }
 
-$ScreenShot
-convert $Pic -blur $Blur $Pic
+#$ScreenShot
+#convert $Pic -blur $Blur $Pic
 #convert $Icon -resize 150x150 $Icon_resize 
 #composite $Icon_resize $Pic -gravity center $Pic 
 ring_lock
-rm $Pic #$Icon_resize
+#rm $Pic2 #$Icon_resize
 
