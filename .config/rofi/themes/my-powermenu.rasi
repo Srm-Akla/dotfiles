@@ -1,0 +1,41 @@
+@import "dracula.rasi"
+
+* {
+    background-color: var(bg);
+    border-color:var(color3);
+    text-color: var(fg);
+    font: "JetBrains Mono 20";
+}
+
+window{
+    anchor:     center;
+    location:   center;
+    width:      55%;
+    padding:    14px;
+    children: [listview];
+}
+
+listview {
+    layout: horizontal;
+    cycle: false;
+    scrollbar: false;
+    spacing:    15px;
+}
+
+element {
+    width: 10%;
+    padding:14px;
+    text-align: center;
+
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+element selected {
+    text-align: center;
+    background-color: @color3;
+    text-color: @bg;
+}

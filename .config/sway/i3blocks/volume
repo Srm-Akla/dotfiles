@@ -1,0 +1,7 @@
+#!/bin/bash
+
+volume=$(amixer sget Master | grep -o "[0-9]\+%")
+mute_state=$(amixer sget Master| sed -n "5p"|awk '{print $6}'| tr -d "[]")
+mic_state=$(amixer sget Capture | gawk 'match($0, /Front Left.*\[(.*)\]/, a) {print a[1]}')
+
+echo "♫ $volume S:$mute_state M:$mic_state"

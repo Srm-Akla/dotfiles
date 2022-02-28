@@ -1,0 +1,12 @@
+*{
+    bg: #EAEAEA;
+    fg: #1D344F;
+    color0: #1d344f;
+    color1: #B95D76;
+    color2: #618774;
+    color3: #BA793E;
+    color4: #6080b0;
+    color5: #8e6f98;
+    color6: #6CA7BD;
+    color7: #cdd1d5;
+}

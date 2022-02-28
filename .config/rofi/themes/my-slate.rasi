@@ -1,0 +1,53 @@
+@import "dracula.rasi"
+
+* {
+    background-color: @bg;
+    border-color:@bg;
+    text-color: @fg;
+    width: 30%;
+    spacing: 0;
+    font: "Jetbrains Mono 12";
+}
+inputbar {
+    border: 0 0 0px 0;
+    orientation: horizontal;
+    children: [prompt,entry];
+}
+prompt {
+    background-color: @color5;
+    text-color: @bg;
+    border-color: @color5;
+    font: "FreeSerif 12";
+    padding: 14px;
+}
+
+textbox {
+    border: 0 0 0px 0;
+    padding: 8px 16px;
+    text-color:@fg;
+}
+
+entry {
+    padding: 16px;
+    background-color: @bg;
+}
+
+listview {
+    lines:7;
+    margin: 0 0 -1px 0px;
+}
+
+element {
+    border: 0 0 1px 0;
+    padding: 16px 16px 16px 30px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element selected {
+    border-color: @color5;
+    background-color: @color5;
+    text-color: @bg;
+}
