@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#BAT="3"
+#BAT=$(acpi -b)
+PERCENTAGE=$(cat /sys/class/power_supply/BAT0/capacity)
+STAT=$(cat /sys/class/power_supply/BAT0/status)
+#STAT="Full,"
+#REM=$(acpi -b | grep -E -o "[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")
+
+if [[ $STAT == "Discharging" ]]; then
+    ICON="(-)"
+elif [[ $STAT == "Charging" ]]; then
+    ICON="(+)"
+elif [[ $STAT == "Full" ]]; then
+    ICON="✓"
+else
+    ICON="?"
+fi
+
+#if [[ ${PERCENTAGE::-2} -le 20 && ${PERCENTAGE::-2} -ge 6 && $STAT=="Discharging," ]]; then
+#    notify-send -u critical -t 10000 -c Battery "Low Battery" "Charge your Battery!"
+#    ICON="❗"
+if [[ $PERCENTAGE -le 10  &&  $STAT == "Discharging" ]]; then
+    ICON="!!"
+    dunstify  "Low Battery!" "Charge your Battery!" -u critical -t 750
+#elif
+#    [[ ${PERCENTAGE::-2} -ge 95 && $STAT == "Charging," ]]; then
+#    zenity --notification --text="Full Battery!"
+fi
+
+echo -e "$ICON $PERCENTAGE% "

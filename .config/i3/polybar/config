@@ -1,0 +1,77 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;==========================================================
+
+include-file = ~/.config/i3/polybar/colors.ini
+include-file = ~/.config/i3/polybar/modules.ini
+include-file = ~/.config/i3/polybar/user_modules.ini
+
+[bar/bar1]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 27
+;offset-x = 1%
+;offset-y = 1%
+;radius = 6.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = ${colors.blue}
+
+border-size = 0
+border-color = ${colors.background}
+
+padding-left = 1
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "Iosevka Nerd Font:size=11;4"
+font-1 = "feather:size=11;3"
+
+enable-ipc = true
+modules-left = i3
+modules-center = date
+modules-right = backlight pulseaudio memory cpu battery 
+
+tray-position = right
+tray-padding = 2
+tray-background = ${colors.background}
+
+locale = nb_NO.UTF-8
+
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 5
+margin-bottom = 0
+
+; vim:ft=dosini
