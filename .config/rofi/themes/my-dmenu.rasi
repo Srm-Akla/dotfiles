@@ -5,7 +5,7 @@
     background-color: var(bg);
     border-color: var(bg);
     text-color: var(fg);
-    spacing: 0;
+    spacing: 10;
     font: "JetBrains Mono 12";
 }
 
@@ -24,14 +24,11 @@ inputbar {
 prompt {
     background-color: var(color6);
     text-color: var(bg);
-    padding: 2px;
-    font: "Fira Code 12";
 }
 
 textbox {
     background-color: var(bg);
     border-color: var(bg);
-    padding: 0px;
 }
 
 entry {
@@ -48,11 +45,6 @@ listview {
     cycle: false;
     scrollbar: false;
     padding: 2px;
-}
-
-element {
-    padding: 0 3px 0 -13px;
-    margin: 0px 2px 0px 2px;
 }
 
 element-text {

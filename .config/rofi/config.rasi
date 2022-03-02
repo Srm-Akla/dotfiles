@@ -143,5 +143,4 @@ configuration {
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
-@theme "/home/thunder/.config/rofi/themes/my-slate.rasi"
-//@theme "/home/thunder/.config/rofi/themes/my-Arc.rasi"
+@theme "/home/thunder/.config/rofi/themes/my-dmenu.rasi"
