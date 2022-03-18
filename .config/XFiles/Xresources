@@ -1,5 +1,6 @@
 !*.perl-lib: $HOME/.config/urxvt/ext/
-#include "/home/thunder/.config/XFiles/catppuccin.Xresources"
+#include "/home/thunder/.config/XFiles/dayfox.Xresources"
+!#include "/home/thunder/.config/XFiles/catppuccin.Xresources"
 
 Xft.dpi: 96
 Xft.antialias: true

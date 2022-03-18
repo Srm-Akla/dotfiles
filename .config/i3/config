@@ -65,7 +65,7 @@ exec dunst
 #exec polybar bar1 -c "~/.config/i3/polybar/config"
 
 #Background image
-exec_always --no-startup-id feh --no-fehbg --bg-scale /home/thunder/Pictures/Wallpapers/ign_astronaut.png
+exec_always --no-startup-id feh --no-fehbg --bg-fill /home/thunder/Pictures/Wallpapers/shaded_landscape.jpeg
 #exec_always --no-startup-id feh --no-fehbg --bg-scale /home/thunder/Pictures/Wallpapers/ign_astronautInTheOcean.png
 #exec --no-startup-id nitrogen --restore
 
