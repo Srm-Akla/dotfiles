@@ -1,9 +1,10 @@
 -- Nvim Colorizer
 require 'colorizer'.setup {
-  'css';
-  'html';
-  'xdefaults';
-  'toml';
-  'dosini';
-  'yml';
+    'css';
+    'html';
+    'xdefaults';
+    'toml';
+    'dosini';
+    'yml';
+    'rasi';
 }

@@ -69,6 +69,8 @@ exec_always --no-startup-id feh --no-fehbg --bg-fill /home/thunder/Pictures/Wall
 #exec_always --no-startup-id feh --no-fehbg --bg-scale /home/thunder/Pictures/Wallpapers/ign_astronautInTheOcean.png
 #exec --no-startup-id nitrogen --restore
 
+exec i3-layouts
+
 #----------------------------------------------------
 # Use amixer for volumn adjustment 
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && pkill -SIGRTMIN+3 i3xrocks
