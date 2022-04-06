@@ -99,7 +99,7 @@ bindsym --release $mod+Escape exec multilockscreen -l
 #bindsym --release $mod+XF86HomePage exec multilockscreen -l
 
 #Other 
-bindsym $mod+m exec $my_terminal -t 'VIFM' -e $fm_tui
+bindsym $mod+m exec $my_terminal -t 'File Manager' -e $fm_tui
 
 # start a terminal
 bindsym $mod+Return exec $my_terminal

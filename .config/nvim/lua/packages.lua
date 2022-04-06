@@ -1,8 +1,10 @@
 return require('packer').startup(function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    use 'neovim/nvim-lspconfig'
-
+    use {
+        'neovim/nvim-lspconfig',
+        'williamboman/nvim-lsp-installer',
+    }
     -- Lualine
     use {
         'nvim-lualine/lualine.nvim',
@@ -21,35 +23,36 @@ return require('packer').startup(function()
         'norcalli/nvim-colorizer.lua'
     }
     -- Neorg
-    use { 
+    use {
         "nvim-neorg/neorg",
         requires = "nvim-lua/plenary.nvim"
     }
 
     use {
         'kyazdani42/nvim-tree.lua',
-         requires = 'kyazdani42/nvim-web-devicons' -- optional, for file icon 
+         requires = 'kyazdani42/nvim-web-devicons' -- optional, for file icon
     }
-     use { 
-         'mrjones2014/load-all.nvim', 
-         requires = 'nvim-lua/plenary.nvim' 
+     use {
+         'mrjones2014/load-all.nvim',
+         requires = 'nvim-lua/plenary.nvim'
      }
     use {
       'nvim-telescope/telescope.nvim',
       requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use {
-        'neovim/nvim-lspconfig'
+    -- Auto completion
+     use { 
+         'hrsh7th/cmp-nvim-lsp',
+         'hrsh7th/cmp-buffer',
+         'hrsh7th/cmp-path',
+         'hrsh7th/cmp-cmdline',
+         'hrsh7th/nvim-cmp',
+         'hrsh7th/cmp-vsnip',
+         'hrsh7th/vim-vsnip',
     }
-    -- use { 'hrsh7th/cmp-nvim-lsp' }
-    -- use { 'hrsh7th/cmp-buffer' }
-    -- use { 'hrsh7th/cmp-path' }
-    -- use { 'hrsh7th/cmp-cmdline' }
-    -- use { 'hrsh7th/nvim-cmp' }
 
-    -- use { 'hrsh7th/cmp-vsnip' }
-    -- use { 'hrsh7th/vim-vsnip' }
+    use 'windwp/nvim-autopairs'
     -- Color Scheme
     use 'Mofiqul/dracula.nvim'
     -- use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
@@ -61,5 +64,6 @@ return require('packer').startup(function()
     use 'folke/tokyonight.nvim'
     use 'EdenEast/nightfox.nvim'
 end)
+
 
 
