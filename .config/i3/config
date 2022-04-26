@@ -65,7 +65,7 @@ exec dunst
 #exec polybar bar1 -c "~/.config/i3/polybar/config"
 
 #Background image
-exec_always --no-startup-id feh --no-fehbg --bg-fill /home/thunder/Pictures/Wallpapers/shaded_landscape.jpeg
+exec_always --no-startup-id feh --no-fehbg --bg-fill /home/thunder/Pictures/Wallpapers/ign_colorful.png
 #exec_always --no-startup-id feh --no-fehbg --bg-scale /home/thunder/Pictures/Wallpapers/ign_astronautInTheOcean.png
 #exec --no-startup-id nitrogen --restore
 
@@ -291,14 +291,11 @@ bindsym $mod+t mode "theme"
 
 mode "Apps" {
 
-    bindsym 1 exec firefox
+    bindsym f exec firefox
     bindsym s exec signal-desktop
-    bindsym e exec element-desktop
     bindsym j exec flatpak run net.cozic.joplin_desktop
-    bindsym t exec thunderbird
     bindsym r exec simplescreenrecorder
     bindsym m exec $fm_gui
-    bindsym e exec powermenu
 
     bindsym Return mode "default"
     bindsym Escape mode "default"

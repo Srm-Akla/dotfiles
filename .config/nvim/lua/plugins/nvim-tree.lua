@@ -12,6 +12,19 @@ require'nvim-tree'.setup {
     enable = true,
     auto_open = true,
   },
+ renderer = {
+    indent_markers = {
+      enable = true,
+      icons = {
+        corner = "└ ",
+        edge = "│ ",
+        none = "  ",
+      },
+    },
+    icons = {
+      webdev_colors = false,
+    },
+  },
 ----    nvim_tree_icons   = {
  --     'default': '',
  --     'symlink': '',

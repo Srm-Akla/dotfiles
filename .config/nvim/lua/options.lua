@@ -47,7 +47,6 @@ opt.showmatch = false	--  Highlight matching brace
 vim.g.completeopt="menu,menuone,noselect,noinsert"
 
 -- Options for Nvim-tree
-vim.g.nvim_tree_indent_markers = true -- false by default, this option shows indent markers when folders are open
 vim.g.nvim_tree_git_hl = true -- false by default, will enable file highlight for git attributes (can be used without the icons).
 vim.g.nvim_tree_highlight_opened_files = true -- false by default, will enable folder and file icon highlight for opened files/directories.
 vim.g.nvim_tree_root_folder_modifier = ':~' -- This is the default. See :help filename-modifiers for more options
